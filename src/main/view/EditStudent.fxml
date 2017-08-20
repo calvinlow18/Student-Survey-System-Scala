@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="655.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.EditStudentController">
+   <children>
+      <HBox layoutX="474.0" layoutY="397.0">
+         <children>
+            <Button defaultButton="true" layoutX="394.0" layoutY="348.0" mnemonicParsing="false" onAction="#okClicked" text="OK" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button layoutX="453.0" layoutY="348.0" mnemonicParsing="false" onAction="#resetClicked" text="Reset" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <GridPane prefHeight="387.0" prefWidth="639.0" stylesheets="@DarkTheme.css" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="310.0" minWidth="10.0" prefWidth="137.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="529.0" minWidth="10.0" prefWidth="478.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Student ID" />
+            <TextField fx:id="stuID" disable="true" GridPane.columnIndex="1" />
+            <Label text="Name" GridPane.rowIndex="1" />
+            <TextField fx:id="stuName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Email" GridPane.rowIndex="2" />
+            <TextField fx:id="stuEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Intake" GridPane.rowIndex="3" />
+            <ChoiceBox fx:id="stuIntake" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Current Semester" GridPane.rowIndex="4" />
+            <Spinner fx:id="stuSemester" editable="true" initialValue="1" max="9" min="1" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

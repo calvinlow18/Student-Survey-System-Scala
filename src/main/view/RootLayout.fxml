@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="584.0" prefWidth="1014.0" style="-fx-background-color: #E5E5FF;" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.RootLayoutController">
+   <top>
+      <AnchorPane prefHeight="45.0" prefWidth="633.0" style="-fx-background-color: #E5E5FF; -fx-border-color: black transparent black transparent; -fx-border-width: 3;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutX="14.0" layoutY="9.0" style="-fx-background-color: #E5E5FF;">
+               <children>
+                  <Label fx:id="welcome" prefWidth="875.0" style="-fx-font-size: 20; -fx-text-fill: black;" text="Label">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="logOutBtn" mnemonicParsing="false" onAction="#onLogOut" prefHeight="33.0" prefWidth="103.0" text="Log Out" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
